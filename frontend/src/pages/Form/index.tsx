@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 function Form() {
@@ -34,7 +35,10 @@ function Form() {
                         <button type="submit" className="btn btn-primary novafilmes-btn">Salvar</button>
                     </div>
                 </form >
+                <Link to="/" >
                 <button className="btn btn-primary novafilmes-btn mt-3">Cancelar</button>
+                </Link>
+                
             </div >
         </div >
 
