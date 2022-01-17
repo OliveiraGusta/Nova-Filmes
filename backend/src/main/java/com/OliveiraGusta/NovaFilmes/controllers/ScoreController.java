@@ -12,6 +12,7 @@ import com.OliveiraGusta.NovaFilmes.services.ScoreService;
 
 @RestController
 @RequestMapping(value = "/scores")
+
 public class ScoreController {
 	
 	@Autowired
