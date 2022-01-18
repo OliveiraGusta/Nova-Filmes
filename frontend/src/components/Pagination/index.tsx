@@ -7,6 +7,8 @@ type Props={
     onChange : Function;
 }
 
+
+
 function Pagination({page, onChange} : Props) {
 
 

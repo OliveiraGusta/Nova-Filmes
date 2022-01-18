@@ -1,15 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./styles.css";
 import { Movie } from "types/movie";
 import { useEffect, useState } from "react";
-import axios from "axios";
+import axios,{AxiosRequestConfig} from "axios";
 import { BASE_URL } from "utils/requests";
+import { validateEmail} from "utils/validate";
 
 type Props={
     movieId : string;
 }
 
 function FormCard({movieId}: Props) {
+
+    const navigate = useNavigate();
 
     const[movie, setMovie] = useState<Movie>();
 
@@ -21,13 +24,42 @@ function FormCard({movieId}: Props) {
     },[movieId] );
 
 
+    const handleSubmit = (event :React.FormEvent<HTMLFormElement>) =>{
+
+        event.preventDefault();
+
+        const email = (event.target as any).email.value;
+        const score = (event.target as any).score.value;
+
+        if (!validateEmail(email)){
+            alert("Email Invalido");
+            return;
+        }
+        const config: AxiosRequestConfig = {
+            baseURL: BASE_URL,
+            method: 'PUT',
+            url: '/scores',
+            data: {
+                email: email,
+                movieId: movieId,
+                score: score
+            }
+        }
+
+        axios(config).then(response => {
+            navigate("/");
+        })
+
+    }
+
+
 
     return (
         <div className="novafilmes-form-container">
             <img className="novafilmes-movie-card-image" src={movie?.image} alt={movie?.title} />
             <div className="novafilmes-card-bottom-container">
                 <h3>{movie?.title}</h3>
-                <form className="novafilmes-form">
+                <form className="novafilmes-form" onSubmit={handleSubmit}>
                     <div className="form-group novafilmes-form-group">
                         <label htmlFor="email">Qual é seu email?</label>
                         <input type="email" className="form-control" id="email" />
