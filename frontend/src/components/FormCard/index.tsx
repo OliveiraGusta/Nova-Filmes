@@ -51,11 +51,12 @@ function FormCard({movieId}: Props) {
         })
 
     }
-
-
-
+   
+    
     return (
+        <body>
         <div className="novafilmes-form-container">
+        
             <img className="novafilmes-movie-card-image" src={movie?.image} alt={movie?.title} />
             <div className="novafilmes-card-bottom-container">
                 <h3>{movie?.title}</h3>
@@ -84,7 +85,8 @@ function FormCard({movieId}: Props) {
                 
             </div >
         </div >
-
+        </body>
+        
     );
 }
 export default FormCard;

@@ -11,7 +11,7 @@ type Props = {
 function MovieCard({movie} : Props ) {
 
     
-    return (
+    return (    
         <div className="novafilmes-movie-card">
             <img className="novafilmes-movie-card-image" src={movie.image} alt={movie.title} />
             <div className="novafilmes-card-bottom-container">
@@ -24,6 +24,7 @@ function MovieCard({movie} : Props ) {
 
             </div>
         </div>
+    
     );
 
 }
