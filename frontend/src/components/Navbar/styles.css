@@ -5,6 +5,16 @@ header{
     align-items: center;
 }
 
+.navbar-icon{
+    position:relative;
+    top:0}
+
+.navbar-icon:hover{
+    top:-5px;
+    transition: all .2500s ease-in-out
+}
+
+
 .novafilmes-nav-content{
     display: flex;
     justify-content: space-between;
@@ -20,6 +30,7 @@ header{
     display: flex;
     align-items:center;
 }
+
 .novafilmes-contact-link{
     margin: 0 0 0 10px;
     font-size: 12px;

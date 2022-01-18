@@ -27,6 +27,12 @@
     align-items: center;
     border: 1px solid var(--color-primary);
     cursor: pointer;
+    overflow: hidden;
+}
+.novafilmes-pagination-button:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all .2500s ease-in-out;
 }
 
 .novafilmes-pagination-button svg {

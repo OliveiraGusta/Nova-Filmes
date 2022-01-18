@@ -11,13 +11,13 @@ function Navbar() {
                     <h1>NOVA FILMES</h1>
                     <a href="https://github.com/OliveiraGusta">
                         <div className="novafilmes-contact-container">
-                            < Githubicon />
+                            < Githubicon className="navbar-icon" />
                             <p className="novafilmes-contact-link">/OliveiraGusta</p>
                         </div>
                     </a>
                     <a href="https://www.linkedin.com/in/oliveiragusta/">
                         <div className="novafilmes-contact-container">
-                            < Linkedinicon />
+                            < Linkedinicon className="navbar-icon"  />
                             <p className="novafilmes-contact-link">/OliveiraGusta</p>
                         </div>
                     </a>

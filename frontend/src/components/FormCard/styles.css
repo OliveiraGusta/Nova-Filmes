@@ -32,9 +32,9 @@
     top:0
 }
 .novafilmes-movie-card:hover{
-    top:-4px;
-    box-shadow:0 4px 4px #999;
-    transition: all .2s ease-in-out}
+    top:-5px;
+    box-shadow:0 5px 5px #999;
+    transition: all .2500s ease-in-out}
 
 .novafilmes-card-bottom-container {
     background-color: #fff;
@@ -43,15 +43,7 @@
     align-items: center;
     padding: 10px 10px 20px 10px;
     border-radius: 0 0 8px 8px;
-    /*position:relative;
-    top:0*/
 }
-/*.novafilmes-card-bottom-container:hover{
-    top:-4px;
-    box-shadow:0 4px 4px #999;
-    transition: all .2s ease-in-out}*/
-
-
 
 .novafilmes-card-bottom-container h3 {
     color: #4A4A4A;
