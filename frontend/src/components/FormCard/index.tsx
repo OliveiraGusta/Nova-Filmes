@@ -29,11 +29,11 @@ function FormCard({movieId}: Props) {
                 <h3>{movie?.title}</h3>
                 <form className="novafilmes-form">
                     <div className="form-group novafilmes-form-group">
-                        <label htmlFor="email">Informe seu email</label>
+                        <label htmlFor="email">Qual é seu email?</label>
                         <input type="email" className="form-control" id="email" />
                     </div>
                     <div className="form-group novafilmes-form-group">
-                        <label htmlFor="score">Informe sua avaliação</label>
+                        <label htmlFor="score">Qual é sua avaliação?</label>
                         <select className="form-control" id="score">
                             <option>1</option>
                             <option>2</option>
