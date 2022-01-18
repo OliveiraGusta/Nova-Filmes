@@ -17,7 +17,7 @@ function Pagination({page, onChange} : Props) {
             <div className="novafilmes-pagination-box">
                 <button className="novafilmes-pagination-button"
                  disabled={page.first} onClick={()=> onChange(page.number -1)} >
-                    <Arrow />
+                    <Arrow  />
                 </button>
                 <p>{`${page.number +1} de ${page.totalPages}`}</p>
                 <button className="novafilmes-pagination-button"  disabled={page.last} onClick={()=> onChange(page.number +1)} >

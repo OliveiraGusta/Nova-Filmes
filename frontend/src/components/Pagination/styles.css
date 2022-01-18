@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .novafilmes-pagination-box form {
@@ -20,7 +21,7 @@
 .novafilmes-pagination-button {
     width: 40px;
     height: 40px;
-    border-radius: 4px;
+    border-radius: 180px;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -28,10 +29,11 @@
     border: 1px solid var(--color-primary);
     cursor: pointer;
     overflow: hidden;
+    
 }
 .novafilmes-pagination-button:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
     transition: all .2500s ease-in-out;
 }
 

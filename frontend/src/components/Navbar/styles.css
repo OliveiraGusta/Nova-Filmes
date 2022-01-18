@@ -3,15 +3,13 @@ header{
     height: 60px;
     display: flex;
     align-items: center;
+    margin-bottom: 1%;
 }
 
-.navbar-icon{
-    position:relative;
-    top:0}
-
 .navbar-icon:hover{
-    top:-5px;
-    transition: all .2500s ease-in-out
+    webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    transition: all .2500s ease-in-out;
 }
 
 
@@ -32,6 +30,6 @@ header{
 }
 
 .novafilmes-contact-link{
-    margin: 0 0 0 10px;
-    font-size: 12px;
+    margin: 5px 10px 0 10px;
+    font-size: 15px;
 }
