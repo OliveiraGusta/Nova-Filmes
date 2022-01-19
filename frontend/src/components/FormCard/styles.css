@@ -9,11 +9,11 @@
 }
 
 .novafilmes-form-group {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .novafilmes-form-group label {
-    font-size: 12px;
+    font-size: 20px;
     color: #aaa;
 }
 
@@ -25,13 +25,15 @@
 .novafilmes-movie-card-image {
     width: 100%;
     border-radius: 8px 8px 0 0;
+    box-shadow:0 0px 20px #999
 }
 
 .novafilmes-movie-card:hover{
 
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
     transition: all .2500s ease-in-out;
+    box-shadow:0 4px 3px #999
 }
 
 .novafilmes-card-bottom-container {
@@ -41,20 +43,22 @@
     align-items: center;
     padding: 10px 10px 20px 10px;
     border-radius: 0 0 8px 8px;
+    box-shadow:0 4px 3px #999
 }
 
 .novafilmes-card-bottom-container h3 {
     color: #4A4A4A;
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
     margin-bottom: 10px;
     min-height: 40px;
+    
 }
 
 .novafilmes-btn {
     background-color: var(--color-primary);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
     height: 40px;
     width: 180px;
