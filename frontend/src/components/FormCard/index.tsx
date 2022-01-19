@@ -63,7 +63,7 @@ function FormCard({movieId}: Props) {
                 <form className="novafilmes-form" onSubmit={handleSubmit}>
                     <div className="form-group novafilmes-form-group">
                         <label htmlFor="email">Qual é seu email?</label>
-                        <input type="email" className="form-control" id="email" />
+                        <input type="email" autoComplete="off" className="form-control" id="email" />
                     </div>
                     <div className="form-group novafilmes-form-group">
                         <label htmlFor="score">Qual é sua avaliação?</label>
